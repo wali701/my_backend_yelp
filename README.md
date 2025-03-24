@@ -22,8 +22,8 @@ To get started with this project, follow these steps:
 -Clone the repository: git clone https://git.us.qwasar.io/my_backend_yelp_180317_sy2f1i/my_backend_yelp.git
 cd my_backend_yelp
 -Install the react and its the dependencies, by running npx create-react-app . for the frontend and make sure you have `npm` installed. Run the following command to install the necessary packages: npm install
--Set up AWS Amplify for the backend - set up the **AWS Amplify** configuration. If you don’t already have an AWS account, create one at [aws.amazon.com](https://aws.amazon.com/).
-Follow the instructions in the AWS Amplify documentation to configure the project with services like **Authentication** and **GraphQL API**. by running amplify add auth, amplify add api and run amplify push to effect the changes.
+-Set up AWS Amplify for the backend - set up the AWS Amplify configuration. If you don’t already have an AWS account, create one at [aws.amazon.com](https://aws.amazon.com/).
+Follow the instructions in the AWS Amplify documentation to configure the project with services like Authentication and GraphQL API. by running amplify add auth, amplify add api and run amplify push to effect the changes.
 -Start the app:
 After completing the installation, the app can be start locally by running:
 npm start
