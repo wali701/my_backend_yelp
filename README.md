@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Welcome to My Backend Yelp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+## Task
 
-In the project directory, you can run:
+The challenge was to create a scalable backend using AWS Amplify, integrate authentication, and make the UI intuitive for managing restaurants effectively. The main problem this app solves is allowing users to manage restaurant data, including adding new restaurants, viewing a list of restaurants, and deleting restaurant entries.
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The problem was solved by leveraging **AWS Amplify** to manage authentication (sign in and sign out)
+and data storage for the restaurant listings. The frontend is built using **React** to provide a smooth user interface where users can:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Sign up and sign in via AWS Amplify Authentication.
+- Create a new restaurant listing by providing a name and description.
+- View the list of restaurant entries.
+- Remove a restaurant listing. The project uses GraphQL API for the queries and mutations that handle interactions with the backend, such as creating and deleting restaurants.
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To get started with this project, follow these steps:
+-Clone the repository: git clone https://git.us.qwasar.io/my_backend_yelp_180317_sy2f1i/my_backend_yelp.git
+cd my_backend_yelp
+-Install the react and its the dependencies, by running npx create-react-app . for the frontend and make sure you have `npm` installed. Run the following command to install the necessary packages: npm install
+-Set up AWS Amplify for the backend - set up the **AWS Amplify** configuration. If you don’t already have an AWS account, create one at [aws.amazon.com](https://aws.amazon.com/).
+Follow the instructions in the AWS Amplify documentation to configure the project with services like **Authentication** and **GraphQL API**. by running amplify add auth, amplify add api and run amplify push to effect the changes.
+-Start the app:
+After completing the installation, the app can be start locally by running:
+npm start
+This will launch the app in the browser, typically at `http://localhost:3000`.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+When everything is working, Hosting was setup with Amplify.
+The app was deployed with AWS Amplify Hosting, through the following steps:
+amplify add hosting
+After hosting was added, it was deployed by running:
+amplify publish
+This command build and deploy the app to the Amplify Hosting service. After the process finishes, The URL for the app was available as:https://d20icubalev4wi.cloudfront.net/
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+This application allows users to:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Sign up/sign in: Use AWS Amplify to sign up or sign in with email and password.
+2. Create a new restaurant: After signing in, users can add a new restaurant by providing the name and description of the restaurant.
+3. View a list of restaurants: Users can view the restaurants they have added. The list is fetched from the backend using a GraphQL query.
+4. Delete a restaurant: Users can remove a restaurant listing they no longer want by clicking the "Remove" button next to the restaurant.
 
-### `npm run eject`
+To use the app:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Sign in with your account.
+- Add restaurants by filling out the form.
+- View the list of restaurants below.
+- Click "Remove" to delete any listing.
+  Technologies Used
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React: Frontend framework for building the UI.
+- AWS Amplify: Backend services for user authentication and GraphQL API.
+- GraphQL: Query language used to interact with the database.
+- AWS Cognito: Managed service for handling user authentication.
+- AWS AppSync: Managed GraphQL service for interacting with the backend.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+./my_backend_yelp
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### The Core Team
 
-## Learn More
+This project was developed by Salaha Abubakar
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<span><i>Made at <a href='https://qwasar.io'>Qwasar SV -- Software Engineering School</a></i></span>
+<span><img alt='Qwasar SV -- Software Engineering School's Logo' src='https://storage.googleapis.com/qwasar-public/qwasar-logo_50x50.png' width='20px' /></span>
